@@ -1,72 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gotham Knight | ROBIN | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Batman | Gotham Knight Portfolio</title>
+    <link rel="icon" href="btman.jpeg" type="image/jpeg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="cursor-glow"></div>
 
-    <nav>
-    <div class="logo">GOTHAM KNIGHTS</div>
+    <!-- Audio element for Signal Me -->
+    <audio
+      id="signalAudio"
+      src="Iron Man Sucks! - Arkham Knight (youtube).m4a"
+    ></audio>
 
-    <div class="nav-right">
+    <nav>
+      <div class="logo">GOTHAM KNIGHTS</div>
+
+      <div class="nav-right">
         <div class="color-accents">
-            <span class="dot cyan"></span>
-            <span class="dot purple"></span>
-            <span class="dot yellow"></span>
+          <span class="dot cyan"></span>
+          <span class="dot purple"></span>
+          <span class="dot yellow"></span>
         </div>
 
         <div class="nav-links">
-            <a href="#work" id="Mission">Missions</a>
+          <a href="missions.html" id="Mission">Missions</a>
 
-            <!-- NEW LINKS DROPDOWN -->
-            <div class="dropdown">
-                <a href="#" class="dropbtn">Links ▾</a>
-                <div class="dropdown-content">
-                    <a href="https://instagram.com" target="_blank">Instagram</a>
-                    <a href="https://facebook.com" target="_blank">Facebook</a>
-                    <a href="https://github.com" target="_blank">GitHub</a>
+          <!-- Main Links Dropdown -->
+          <div class="dropdown">
+            <a href="#" class="dropbtn">Links ▾</a>
+            <div class="dropdown-content">
+              <a
+                href="https://www.instagram.com/hey.tushar.here/"
+                target="_blank"
+                >Instagram</a
+              >
+              <a href="https://www.facebook.com/IMOON.SHADOW" target="_blank"
+                >Facebook</a
+              >
+              <a href="https://github.com/heyitstushar-nvm" target="_blank"
+                >GitHub</a
+              >
+              <!-- Nested Dropdown for More -->
+              <div class="nested-dropdown">
+                <a href="#" class="dropbtn nested-btn">More ▸</a>
+                <div class="nested-content">
+                  <a href="https://x.com/Tushar1890467" target="_blank"
+                    >Twitter</a
+                  >
+                  <a
+                    href="https://www.linkedin.com/in/tushar-a8505233a/"
+                    target="_blank"
+                    >LinkedIn</a
+                  >
                 </div>
+              </div>
             </div>
+          </div>
 
-            <a href="#contact" class="btn-sm" id="Signal">Signal Me</a>
+          <a href="#contact" class="btn-sm" id="Signal" onclick="playSignal()"
+            >Signal Me</a
+          >
         </div>
-    </div>
-</nav>
+      </div>
+    </nav>
 
     <main class="container">
-        <section class="hero">
-            <div class="robin-frame">
-                <div class="image-placeholder"><img src="robin.jpg" alt="Robin in Gotham Knight suit standing confidently in dark urban environment, ready for action, embodying justice and vigilance"></div>
-            </div>
-            
-            <h1 class="neon-title">THE <br><span class="gradient-text">BATMAN</span></h1>
-            <p class="subtitle">Vengeance. Justice. High-Performance Code.</p>
-        </section>
-
-        <div class="bento-grid">
-            <div class="card tall neon-border">
-                <h3>Bat-Gear Tech</h3>
-                <div class="project-img"></div>
-            </div>
-            <div class="card wide">
-                <h3>Crime Database</h3>
-                <p>React • Node • Deep Learning • Encryption</p>
-            </div>
-            <div class="card small">
-                <h3>Status</h3>
-                <p>Active</p>
-            </div>
-            <div class="card small">
-                <h3>City</h3>
-                <p>Gotham</p>
-            </div>
+      <section class="hero">
+        <div class="profile-banner">
+          <!-- Video Background -->
+          <video class="banner-video" autoplay muted loop playsinline>
+            <source src="thisvideo.mp4" type="video/mp4" />
+          </video>
         </div>
+        <div class="robin-frame">
+          <img
+            src="btman.jpeg"
+            alt="Robin in Gotham Knight suit standing confidently in dark urban environment, ready for action, embodying justice and vigilance"
+          />
+        </div>
+
+        <h1 class="neon-title">
+          <span>THE</span>
+          <span class="gradient-text">BATMAN</span>
+        </h1>
+        <p class="subtitle">Vengeance. Justice. High-Performance Code.</p>
+      </section>
+
+      <div class="bento-grid">
+        <div class="card tall neon-border">
+          <h3>Bat-Gear Tech</h3>
+          <div class="project-img"></div>
+        </div>
+        <div class="card wide">
+          <h3>Crime Database</h3>
+          <p>React • Node • Deep Learning • Encryption</p>
+        </div>
+        <div class="card small">
+          <h3>Status</h3>
+          <p>Active</p>
+        </div>
+        <div class="card small">
+          <h3>City</h3>
+          <p>Gotham</p>
+        </div>
+      </div>
     </main>
 
+    <footer class="footer" id="contact">
+      <div class="footer-content">
+        <div class="footer-bat">
+          <span>🦇</span>
+        </div>
+        <p class="footer-tagline">
+          "The night is darkest just before the dawn."
+        </p>
+        <div class="footer-contact">
+          <a href="mailto:tdhiman1923@gmail.com" class="contact-link"
+            >tdhiman1923@gmail.com</a
+          >
+        </div>
+        <div class="footer-links">
+          <a href="https://www.instagram.com/hey.tushar.here/" target="_blank"
+            >Instagram</a
+          >
+          <a href="https://github.com/heyitstushar-nvm" target="_blank"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/tushar-a8505233a/"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a href="https://x.com/Tushar1890467" target="_blank">Twitter</a>
+        </div>
+        <p class="footer-madeby">Made by TUSHAR</p>
+        <p class="footer-copyright">
+          © 2024 Gotham Knight Portfolio. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
     <script src="script.js"></script>
-</body>
+    <script>
+      function playSignal() {
+        var audio = document.getElementById("signalAudio");
+        audio.currentTime = 0;
+        audio.play().catch(function (error) {
+          console.log("Audio play failed:", error);
+        });
+      }
+    </script>
+  </body>
 </html>
